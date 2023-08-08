@@ -19,6 +19,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.apache.groovy:groovy'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	testImplementation group: 'org.spockframework', name: 'spock-core', version: '2.4-M1-groovy-4.0'
 }
 
 tasks.named('test') {
