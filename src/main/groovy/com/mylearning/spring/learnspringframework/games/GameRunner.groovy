@@ -6,10 +6,13 @@ import org.springframework.stereotype.Component
 @Component
 class GameRunner {
 
-    @Autowired
+//    @Autowired - commented to be taken care of by constructor injection
     private GamingConsole game
 
+    //constructor injection
+    @Autowired
     GameRunner(GamingConsole game) {
+        System.out.println("GamingConsole is wired using constructor injection")
         this.game = game
     }
 
